@@ -34,9 +34,9 @@ target_compile_options(fxlinux PRIVATE -Wall -Wextra -Os -w)
 target_link_libraries(fxlinux Gint::Gint)
 
 if("${FXSDK_PLATFORM_LONG}" STREQUAL fx9860G)
-  generate_g1a(TARGET fxlinux OUTPUT "FxLinux.g1a"
-    NAME "FxLinux" ICON assets-fx/icon.png)
+  generate_g1a(TARGET fxlinux OUTPUT "AdvencedFxLinux.g1a"
+    NAME "AdvencedFxLinux" ICON assets-fx/icon.png)
 elseif("${FXSDK_PLATFORM_LONG}" STREQUAL fxCG50)
-  generate_g3a(TARGET fxlinux OUTPUT "FxLinux.g3a"
-    NAME "FxLinux" ICONS assets-cg/icon-uns.png assets-cg/icon-sel.png)
+  generate_g3a(TARGET fxlinux OUTPUT " AdvencedFxLinux.g3a"
+    NAME "AdvencedFxLinux" ICONS assets-cg/icon-uns.png assets-cg/icon-sel.png)
 endif()
